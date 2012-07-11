@@ -1,0 +1,8 @@
+.git
+.hg
+.svn
+
+*.pyc
+*.pyo
+
+Gist.sublime-settings
