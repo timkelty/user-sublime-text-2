@@ -1,0 +1,18 @@
+<snippet>
+  <content><![CDATA[
+{exp:switchee
+  variable="${20:variable}"
+  parse="inward"${150:}
+}
+
+  {case value="${200:value1|value2}"${210: default="yes"}}
+    ${0:$TM_SELECTED_TEXT}
+  {/case}
+
+{/exp:switchee}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>switchee</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.ee</scope>
+</snippet>

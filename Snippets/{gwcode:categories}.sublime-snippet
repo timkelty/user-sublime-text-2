@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+{exp:gwcode_categories${10:
+  entry_id="${20:parent_entry_id}"}${40:
+  child_id="${60:1|2|3}"}${70:
+  ${80:field}="$90"}${100:
+  ${140:col}="$150"}${160:
+  row_id="$180"}${190:
+  disable="${191:custom_fields|}${192:categories|}${193:category_fields|}${194:member_data|}${195:pagination}"}
+}
+
+  ${270:$TM_SELECTED_TEXT}
+
+{/exp:gwcode_categories}]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>cat</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.ee</scope>
+</snippet>

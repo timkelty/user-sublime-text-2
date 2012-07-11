@@ -1,0 +1,9 @@
+<snippet>
+  <content><![CDATA[
+?>$0<?${TM_PHP_OPEN_TAG:php}
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>php</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>source.php</scope>
+</snippet>

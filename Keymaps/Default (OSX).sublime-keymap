@@ -1,0 +1,47 @@
+[
+
+  { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace"} },
+
+  // semicolon, newlines
+  { "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/EOL Semicolon.sublime-macro"} },
+  { "keys": ["super+shift+;"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/New Line Semicolon.sublime-macro"} },
+
+  // arrays
+  { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/New Line Array.sublime-macro"} },
+  { "keys": ["super+shift+."], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Array Arrow.sublime-macro"} },
+
+  // docblock
+  { "keys": ["super+alt+/"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Begin DocBlock.sublime-macro"} },
+
+  // ctrl+enter
+  // { "keys": ["ctrl+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/.sublime-macro"} },
+
+  // empty PHP tag
+  { "keys": ["enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/PHP empty return.sublime-macro"}, "context":
+     [
+        { "key": "selector","operator": "equal", "operand": "source.php.embedded.line.empty.html source.php" }
+     ]
+  },
+
+  { "keys": ["super+v"], "command": "paste_and_indent" },
+  { "keys": ["super+shift+v"], "command": "paste" },
+  { "keys": ["super+ctrl+r"], "command": "reveal_in_side_bar" },
+  { "keys": ["ctrl+h"], "command": "goto_documentation" },
+
+  { "keys": ["escape"], "command": "alternative_autocomplete", "context":
+    [
+      { "key": "num_selections", "operator": "equal", "operand": 1 },
+      { "key": "overlay_visible", "operator": "equal", "operand": false },
+      { "key": "panel_visible", "operator": "equal", "operand": false }
+    ]
+  },
+  { "keys": ["shift+escape"], "command": "alternative_autocomplete", "args": {"cycle": "previous"}, "context":
+    [
+      { "key": "num_selections", "operator": "equal", "operand": 1 },
+      { "key": "overlay_visible", "operator": "equal", "operand": false },
+      { "key": "panel_visible", "operator": "equal", "operand": false }
+    ]
+  }
+
+
+]

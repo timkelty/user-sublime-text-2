@@ -1,0 +1,32 @@
+{
+	"": "",
+	"auto_upgrade_last_run": 1341951306,
+	"installed_packages":
+	[
+		"Alignment",
+		"alternative_autocompletion",
+		"ApacheConf.tmLanguage",
+		"Color Scheme - Frontend Delight",
+		"DocBlockr",
+		"ExpressionEngine",
+		"Function Name Display",
+		"Gist",
+		"Git",
+		"Gitignore",
+		"Goto Documentation",
+		"Inc-Dec-Value",
+		"jQuery",
+		"Markdown Preview",
+		"Package Control",
+		"PhpBeautifier",
+		"SCSS",
+		"Search Anywhere",
+		"SideBarEnhancements",
+		"StringEncode",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"TextFormatting",
+		"Theme - Soda",
+		"ZenCoding"
+	]
+}

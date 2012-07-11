@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+{exp:ce_img:single
+  {gv_param_ce_img_defaults}
+  src="$20"${40:
+  max="$180"}${190:
+  width="$200"}${210:
+  height="$220"}${225:
+  fallback_src="${230:http://placekitten.com/g/$200/$220}"}${250:
+  crop="${260:yes_or_no|position|offset|smart_scale}"}$270
+}]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>ce</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <scope>text.html.ee</scope>
+</snippet>
