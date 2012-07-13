@@ -1,9 +1,12 @@
 [
-
+  { "keys": ["ctrl+alt+super+f"], "command": "side_bar_find_in_project",   "args": {"paths": []} },
+  { "keys": ["super+shift+f"], "command": "side_bar_find_in_parent",   "args": {"paths": []} },
   { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace"} },
+
+  { "keys": ["shift+ctrl+r"], "command": "side_bar_reveal", "args": {"paths": []} },
+  { "keys": ["super+ctrl+r"], "command": "reveal_in_side_bar" },
   { "keys": ["super+v"], "command": "paste_and_indent" },
   { "keys": ["super+shift+v"], "command": "paste" },
-  { "keys": ["super+ctrl+r"], "command": "reveal_in_side_bar" },
   { "keys": ["ctrl+h"], "command": "goto_documentation" },
 
   // semicolon, newlines
@@ -15,7 +18,7 @@
   { "keys": ["super+shift+."], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Array Arrow.sublime-macro"} },
 
   // docblock
-  { "keys": ["super+alt+/"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Begin DocBlock.sublime-macro"} },
+  // { "keys": ["super+alt+/"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Begin DocBlock.sublime-macro"} },
 
   // ctrl+enter <br> in html
   { "keys": ["ctrl+enter"], "command": "insert_snippet", "args": {"contents": "<br>"}, "context":

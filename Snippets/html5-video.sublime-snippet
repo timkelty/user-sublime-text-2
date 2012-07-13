@@ -1,0 +1,16 @@
+<snippet>
+  <content><![CDATA[
+<video width="${1:640}" height="${2:360}"${3: controls}${4: poster="${5:filename}.jpg"}>
+  <source src="${6:filename}.mp4" type="video/mp4" />
+${7:  <source src="${8:$6}.webm" type="video/webm" />
+}${9:  <object width="$1" height="$2" type="application/x-shockwave-flash" data="${10:flash_file}.swf">
+    <param name="movie" value="$10.swf" />
+    <param name="flashvars" value="controlbar=over&amp;image=${11:image}.jpg&amp;file=$6.mp4" />
+    <img src="${12:$11.jpg}" width="$1" height="$2" alt="${13:alt text}"
+         title="${14:title text}" />
+  </object>
+}</video>
+]]></content>
+  <tabTrigger>vid</tabTrigger>
+  <scope>text.html</scope>
+</snippet>
