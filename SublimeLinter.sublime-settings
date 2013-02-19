@@ -1,11 +1,52 @@
 {
-  "sublimelinter_popup_errors_on_save": true,
   "sublimelinter": "load-save",
+  "jshint_options":
+  {
+    "browser": true,
+    "curly": true,
+    // "curly": false,
+    "eqnull": true,
+    "jquery": true,
+    "lastsemic": true,
+    "latedef": true,
+    // "latedef": false,
+    "noarg": true,
+    "node": true,
+    "strict": false,
+    "predef":
+    {
+      "$LAB": true,
+      "App": false,
+      "FM": true,
+      "define": false,
+      "MediaElementPlayer": false,
+      "_gaq": false,
+      "mejs": false
+    },
+    "sub": true,
+    "trailing": true,
+    "undef": true
+  },
+
+  "pep8_ignore":
+  [
+    "E501",
+    "E401",
+    "E302"
+  ],
+  // An array of linter names to disable. Names should be lowercase.
+  "sublimelinter_disable":
+  [
+    "css"
+  ],
+  "sublimelinter_gutter_marks": true,
+  // "sublimelinter_mark_style": "fill",
+  "sublimelinter_popup_errors_on_save": true,
   "sublimelinter_syntax_map":
   {
     "Python Django": "python",
+    "jQuery (JavaScript)": "javascript",
+    "jQuery-JavaScript": "javascript",
     "ExpressionEngine": "php"
-  },
-
-  "": ""
+  }
 }

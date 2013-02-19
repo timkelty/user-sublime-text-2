@@ -1,24 +1,13 @@
 [
-  { "keys": ["ctrl+alt+super+f"], "command": "side_bar_find_in_project",   "args": {"paths": []} },
-  { "keys": ["super+shift+f"], "command": "side_bar_find_in_parent",   "args": {"paths": []} },
+  { "keys": ["super+alt+f"], "command": "side_bar_find_in_parent",   "args": {"paths": []} },
   { "keys": ["super+f"], "command": "show_panel", "args": {"panel": "replace"} },
 
   { "keys": ["shift+ctrl+r"], "command": "side_bar_reveal", "args": {"paths": []} },
   { "keys": ["super+ctrl+r"], "command": "reveal_in_side_bar" },
+
   { "keys": ["super+v"], "command": "paste_and_indent" },
   { "keys": ["super+shift+v"], "command": "paste" },
-  { "keys": ["ctrl+h"], "command": "goto_documentation" },
-
-  // semicolon, newlines
-  { "keys": ["super+;"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/EOL Semicolon.sublime-macro"} },
-  { "keys": ["super+shift+;"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/New Line Semicolon.sublime-macro"} },
-
-  // arrays
-  { "keys": ["shift+enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/New Line Array.sublime-macro"} },
-  { "keys": ["super+shift+."], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Array Arrow.sublime-macro"} },
-
-  // docblock
-  // { "keys": ["super+alt+/"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Begin DocBlock.sublime-macro"} },
+  { "keys": ["super+shift+r"], "command": "reindent" },
 
   // ctrl+enter <br> in html
   { "keys": ["ctrl+enter"], "command": "insert_snippet", "args": {"contents": "<br>"}, "context":
@@ -28,11 +17,14 @@
   },
 
   // empty PHP tag
-  { "keys": ["enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/PHP empty return.sublime-macro"}, "context":
-     [
-        { "key": "selector", "operator": "equal", "operand": "source.php.embedded.line.empty.html source.php" }
-     ]
-  },
+  // { "keys": ["enter"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/PHP empty return.sublime-macro"}, "context":
+  //    [
+  //       { "key": "selector", "operator": "equal", "operand": "source.php.embedded.line.empty.html source.php" }
+  //    ]
+  // },
+
+  // docblock
+  // { "keys": ["super+alt+/"], "command": "run_macro_file", "args": {"file": "Packages/User/Macros/Begin DocBlock.sublime-macro"} },
 
   // completion
   { "keys": ["escape"], "command": "alternative_autocomplete", "context":
@@ -49,6 +41,5 @@
       { "key": "panel_visible", "operator": "equal", "operand": false }
     ]
   }
-
 
 ]

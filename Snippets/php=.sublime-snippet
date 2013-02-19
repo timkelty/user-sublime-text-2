@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-<?php echo ${2:\$}$1; ?>
+<?= ${2:\$}$1; ?>
 ]]></content>
   <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
   <tabTrigger>php=</tabTrigger>
